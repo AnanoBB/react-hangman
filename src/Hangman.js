@@ -71,7 +71,7 @@ class Hangman extends Component {
        
        
         {this.state.nWrong > this.props.maxWrong ? <p>You lose ! Correct word was {this.state.answer}</p> : <p className='Hangman-btns'>{this.generateButtons()}</p> }
-        <button onClick={this.reset}>Reset</button>
+        <button id="reset" onClick={this.reset}>Reset</button>
       </div>
     );
   }
